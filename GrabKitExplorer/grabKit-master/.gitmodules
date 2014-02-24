@@ -1,0 +1,12 @@
+[submodule "grabKit/grabKit/submodules/ISO8601DateFormatter"]
+	path = grabKit/grabKit/submodules/ISO8601DateFormatter
+	url = git://github.com/keithpitt/ISO8601DateFormatter.git
+[submodule "grabKit/grabKit/submodules/objectiveflickr"]
+	path = grabKit/grabKit/submodules/objectiveflickr
+	url = git://github.com/lukhnos/objectiveflickr.git
+[submodule "grabKit/grabKit/submodules/MBProgressHUD"]
+	path = grabKit/grabKit/submodules/MBProgressHUD
+	url = https://github.com/jdg/MBProgressHUD
+[submodule "grabKit/grabKit/submodules/NVUIGradientButton"]
+	path = grabKit/grabKit/submodules/NVUIGradientButton
+	url = https://github.com/nverinaud/NVUIGradientButton

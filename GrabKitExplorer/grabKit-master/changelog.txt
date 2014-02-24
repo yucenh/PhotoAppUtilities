@@ -1,0 +1,208 @@
+GrabKit v1.4 changelog :
+Release Date : November 13, 2013
+
+What has changed :
+
+* The deployment target is now iOS 6
+* In the GRKDeviceGrabber, the Camera Roll is now the first album to be returned
+
+What has been fixed :
+* In the GRKDeviceGrabber, the bug preventing to retrieve all the photos of an album has been fixed.
+
+
+
+GrabKit v1.3.2 changelog :
+Release Date : August 23, 2013
+
+What's new :
+
+* Turkish and Chinese Localizations
+* On GRKPhoto, 2 methods have been added : 
+	* -(GRKImage*)firstImageWithWidthGreaterThan:(CGFloat)minimumWidth;
+	* -(GRKImage*)firstImageWithHeightGreaterThan:(CGFloat)minimumHeight; 
+* On GRKPickerViewController, the method presentInPopoverFromRect:inView:permittedArrowDirections:animated: has been added
+
+What has changed :
+
+* On GRKPhoto, methods imagesSortedByWidth and imageSortedByHeight now use a cache
+
+What has been fixed :
+
+* On GRKPickerViewController, the method  -presentInPopoverFromBarButtonItem:permittedArrowDirections:animated: now uses the given parameter
+* Fix inconsistent capitalization in the .gitsubmodules file 
+* Remove all selected photos if keepsSelection == NO, when the picker is presented in popover.
+* Fix in Facebook Grabber : Sometimes, "created_time" and "updated_time" entries are missing from Facebook's API results.
+* Fix in the recycling of thumbnails
+* Some typo in comments
+
+
+
+GrabKit v1.3.1 changelog :
+Release Date : mid july 2013
+
+What has been fixed :
+* Fix in the Facebook query for the profile picture ( #20 )
+* Fix in the Picasa Grabber and configuration when using GrabKit as a lib (without the picker)
+
+
+
+GrabKit v1.3 changelog :
+Release Date : April 6, 2013
+
+What's new :
+
+* You were expecting it, it's now available : GrabKitPicker, a ready-to-use controller to allow your users to picker their images.
+	
+	GrabKitPicker is Developer-friendly :
+	
+		Compatible with iOS 5.1 and higher, for both iPhone and iPad, the GrabKitPicker is already compatible with your project. 
+		
+		Once you've installed and configured it, all you have to do is to present it "modally" on iPhone, or through a popover on iPad.
+		
+		Easy to use, GrabKitPicker offers 2 main classes : GRKPickerViewController, and its delegate GRKPickerViewControllerDelegate.
+
+		Easy to customize, it will fit to the design of your applications.
+	
+		Through its delegation protocol, you can easily handle your users' interactions.
+	
+		Of course, GrabKitPicker uses ARC, and is full of documentation and comments.
+	
+	GrabKitPicker is also user-friendly :
+	
+		Translated in French and English so far, but soon translated in other languages. feel free to help ! :)
+		
+		The default interface is simple and easy to use, though heavily tested to offer the best user-experience possible.
+		
+		
+	
+* Added two properties to the grabbers :
+
+	* requiresConnection : returns YES for grabbers that needs to "connect" ( through OAuth or other mechanisms). 
+		This property is *does not* represent the current state of the connection of the user, but repreents the *existence* of an authentication mechanism.
+		For example, the deviceGrabber doesn't require a connection, but FacebookGrabber does.
+
+	* canLoadPagesDiscontinuously : returns YES if the grabber can load pages of photos of an album in a discontinuous way ( load page 1, then page 5, then page 0 ...)
+		For example, Instagram API doesn't offer pagination, so this property on GRKInstagramGrabber returns NO.
+
+
+* Added preprocessor constants in GrabKit.h, to easily disable a Grabber. see GRK_FACEBOOK_SERVICE, GRK_FLICKR_SERVICE, ...
+
+* New submodules added specifically for GrabKitPicker : 
+			* NVUIGradientButton 	https://github.com/nverinaud/NVUIGradientButton/
+			* MBProgressHUD 		https://github.com/jdg/MBProgressHUD/
+			* PSTCollectionView 	https://github.com/steipete/PSTCollectionView/
+	
+		
+
+
+What has changed :
+
+* The Demo application now demonstrates the use of a GRKPickerViewController, and its delegate.
+
+* Update in the Model : classes are now splitted in categories. 
+	The implementations of GRKAlbum and GRKPhoto classes allow read methods only. 
+	A "modify" category has been added for each class, and is included only where modification is needed, for classes allowed to modify the objects (i.e. the grabbers)
+	There is no "modify" category for GRKImage yet, because there's no need to modify GRKImage in the whole project. 
+	But GRKImage will follow this design pattern in the future, if needed.
+
+* Performances improvements, by adding specific dispatch_async on the proper queues where needed.
+
+* Update in GRKConnectorsDispatcher for a better developper-experience : the dispatcher is now adding itself as observer for specific notifications, thus preventing some modifications on the appDelegate.
+
+* Refined all the connectors
+
+* Some unit-tests have been updated
+
+
+
+What has been fixed :
+
+* Fix in GRKDeviceGrabber to improve the load of albums' covers
+
+
+
+
+
+
+GrabKit v1.2.3 changelog :
+Release Date : January 29, 2013
+
+* Update in GrabKit Demo's pbxproj to weakly link 2 frameworks ( Accounts and AdSupport, needed for Facebook )
+* Update in GrabKit's pbxproj for Xcode 4.6
+* Update in Facebook Grabber : better test to validate session, and improved handling of errors in some batch requests.
+* Fix for issue #12 (improvement) : Detection of cancelled authentication processes.
+
+
+
+GrabKit v1.2.2 changelog :
+Release Date : January 24, 2013
+
+* The "external libraries" directory has been replaced by submodules
+* A bash script has been added to download and install submodules
+* The icons for each service in the demo App have been updated
+* The documentation has been updated
+* Fixed a bug in GRKDeviceGrabber when there is 0 album on the device
+
+
+
+GrabKit v1.2.1 changelog :
+Release Date : Nov 26, 2012
+
+* Merging a pull request from zrqx, fixing minor bugs for the Facebook grabber.
+
+
+GrabKit v1.2 changelog :
+Release Date : Sept 02, 2012
+
+* All Grabbers can now grab the data of the Cover of an album, and build a GRKPhoto from it. 
+  Use the Two methods added to the GRKServiceGrabberProtocol, and implemented in every grabber :
+	* [GRKServiceGrabber fillCoverPhotoOfAlbum:andCompleteBlock:andErrorBlock:];
+	* [GRKServiceGrabber fillCoverPhotoOfAlbums:andCompleteBlock:andErrorBlock:];					                 
+* GRKAlbum : Adding the property GRKPhoto * coverPhoto
+* Facebook grabber : added grabbing of the "tagged photos" of the user.
+* Facebook grabber : now uses batched queries
+* Facebbok grabber : optimization when retrieving data of a photo (loading only the needed data)
+* GrabKit now includes the official release of Facebook iOS SDK 3.0 (not the beta version anymore)
+* FlickR grabber : uses queued queries to retrieve covers of albums (FlickR API doens't offer batch methods)
+* GrabKit now includes the last version of ObjectiveFlickR project (fixing issue #5)
+* Picasa grabber : uses queued queries to retrieve covers of albums (Picasa API offers batch methods but they are totally unusable)
+* Removed each specific kind of blocks to handle queries results (GRKFacebookQueryHandlingBlock, GRKFlickrQueryHandlingBlock, ...). These blocks are replaced by GRKQueryResultBlock.
+* GRKAlbum : the method "getDateForProperty:" is now "dateForProperty:"
+* GRKPhoto : the method "getDateForProperty:" is now "dateForProperty:"
+* adding KVO on property "count" of GRKAlbum (useful to notify changes of this value, as services may return a wrong value)
+* Update in Demo : more elegant squared cells with gray background when a thumbnail is loading
+* Update in Demo : list of albums now displays the albums' covers.
+
+
+	
+	
+GrabKit v1.1 changelog :
+Release Date : Jul 30, 2012
+
+* Project re-organized : 1 project, 3 targets : demo application, static library and bundle.
+* GrabKit is ARC
+* GrabKit uses Facebook iOS SDK 3.0
+* Update in the Instagram grabber to use NSJSONSerialization (no need of SBJSon anymore)
+* Fix in the FlickR Grabber for connection 
+* Fix in the Picasa Grabber related to Gdata lib's intern cache mechanism
+* Update in connectors to allow canceling connections
+* Adding a configuration protocol (GRKConfiguratorProtocol)
+* Udpate in demo : 
+	* Fix to make GRKDeviceGrabber work
+	* In the list of photos, each page of result is now a TableView section
+	* A logout button is now available
+	* Icons for each service
+
+
+
+
+GrabKit v1.0 changelog : 
+Release Date : Jul 02, 2012
+
+* Initial version, non ARC, with the following grabbers:
+	* Facebook
+	* FlickR
+	* Instagram
+	* Picasa
+	* iPhone/iPad
+	
