@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC3DCC0E18A8D53A00F4DAFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3DCC0D18A8D53A00F4DAFF /* Foundation.framework */; };
+		AC3DCC1018A8D53A00F4DAFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3DCC0F18A8D53A00F4DAFF /* CoreGraphics.framework */; };
+		AC3DCC1218A8D53A00F4DAFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3DCC1118A8D53A00F4DAFF /* UIKit.framework */; };
+		AC3DCC1818A8D53A00F4DAFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC3DCC1618A8D53A00F4DAFF /* InfoPlist.strings */; };
+		AC3DCC1A18A8D53A00F4DAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3DCC1918A8D53A00F4DAFF /* main.m */; };
+		AC3DCC1E18A8D53A00F4DAFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3DCC1D18A8D53A00F4DAFF /* AppDelegate.m */; };
+		AC3DCC2018A8D53A00F4DAFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3DCC1F18A8D53A00F4DAFF /* Images.xcassets */; };
+		AC3DCC2718A8D53A00F4DAFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3DCC2618A8D53A00F4DAFF /* XCTest.framework */; };
+		AC3DCC2818A8D53A00F4DAFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3DCC0D18A8D53A00F4DAFF /* Foundation.framework */; };
+		AC3DCC2918A8D53A00F4DAFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3DCC1118A8D53A00F4DAFF /* UIKit.framework */; };
+		AC3DCC3118A8D53A00F4DAFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC3DCC2F18A8D53A00F4DAFF /* InfoPlist.strings */; };
+		AC3DCC3318A8D53A00F4DAFF /* GrabKitExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3DCC3218A8D53A00F4DAFF /* GrabKitExplorerTests.m */; };
+		ACF88CFB18A9F3AA002C5425 /* GrabKitLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CF218A9F342002C5425 /* GrabKitLib.a */; };
+		ACF88D0418A9F3D6002C5425 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CFC18A9F3D6002C5425 /* Accounts.framework */; };
+		ACF88D0518A9F3D6002C5425 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CFD18A9F3D6002C5425 /* AdSupport.framework */; };
+		ACF88D0618A9F3D6002C5425 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CFE18A9F3D6002C5425 /* AssetsLibrary.framework */; };
+		ACF88D0718A9F3D6002C5425 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88CFF18A9F3D6002C5425 /* CFNetwork.framework */; };
+		ACF88D0818A9F3D6002C5425 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88D0018A9F3D6002C5425 /* QuartzCore.framework */; };
+		ACF88D0918A9F3D6002C5425 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88D0118A9F3D6002C5425 /* Security.framework */; };
+		ACF88D0A18A9F3D6002C5425 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88D0218A9F3D6002C5425 /* Social.framework */; };
+		ACF88D0B18A9F3D6002C5425 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88D0318A9F3D6002C5425 /* SystemConfiguration.framework */; };
+		ACF88D0C18A9F407002C5425 /* GrabKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACF88CF418A9F342002C5425 /* GrabKitBundle.bundle */; };
+		ACF88D0E18A9F4DA002C5425 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF88D0D18A9F4DA002C5425 /* FacebookSDK.framework */; };
+		ACF88D1218AA1CDC002C5425 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF88D1018AA1CDC002C5425 /* HomeViewController.m */; };
+		ACF88D1318AA1CDC002C5425 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF88D1118AA1CDC002C5425 /* HomeViewController.xib */; };
+		ACF88D1618AA20C9002C5425 /* myGrabKitConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF88D1518AA20C9002C5425 /* myGrabKitConfigurator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC3DCC2A18A8D53A00F4DAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC3DCC0218A8D53A00F4DAFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC3DCC0918A8D53A00F4DAFF;
+			remoteInfo = GrabKitExplorer;
+		};
+		ACF88CEF18A9F342002C5425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F3C2B4A15B9F7FC008D894A;
+			remoteInfo = GrabKitDemo;
+		};
+		ACF88CF118A9F342002C5425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FD3999715BF1E2B0063542C;
+			remoteInfo = GrabKitLib;
+		};
+		ACF88CF318A9F342002C5425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F89F1C115BFC18B00B8739D;
+			remoteInfo = GrabKitBundle;
+		};
+		ACF88CF518A9F342002C5425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FC592F816FCDAA500ABDF45;
+			remoteInfo = GrabKitTests;
+		};
+		ACF88CF718A9F391002C5425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FD3999615BF1E2B0063542C;
+			remoteInfo = GrabKitLib;
+		};
+		ACF88CF918A9F391002C5425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F89F1C015BFC18B00B8739D;
+			remoteInfo = GrabKitBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC3DCC0A18A8D53A00F4DAFF /* GrabKitExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabKitExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3DCC0D18A8D53A00F4DAFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC3DCC0F18A8D53A00F4DAFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC3DCC1118A8D53A00F4DAFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC3DCC1518A8D53A00F4DAFF /* GrabKitExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrabKitExplorer-Info.plist"; sourceTree = "<group>"; };
+		AC3DCC1718A8D53A00F4DAFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC3DCC1918A8D53A00F4DAFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC3DCC1B18A8D53A00F4DAFF /* GrabKitExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrabKitExplorer-Prefix.pch"; sourceTree = "<group>"; };
+		AC3DCC1C18A8D53A00F4DAFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC3DCC1D18A8D53A00F4DAFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC3DCC1F18A8D53A00F4DAFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC3DCC2518A8D53A00F4DAFF /* GrabKitExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabKitExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3DCC2618A8D53A00F4DAFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AC3DCC2E18A8D53A00F4DAFF /* GrabKitExplorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrabKitExplorerTests-Info.plist"; sourceTree = "<group>"; };
+		AC3DCC3018A8D53A00F4DAFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC3DCC3218A8D53A00F4DAFF /* GrabKitExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrabKitExplorerTests.m; sourceTree = "<group>"; };
+		ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = grabKit.xcodeproj; path = "../../../Downloads/grabKit-master/grabKit/grabKit.xcodeproj"; sourceTree = "<group>"; };
+		ACF88CFC18A9F3D6002C5425 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		ACF88CFD18A9F3D6002C5425 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		ACF88CFE18A9F3D6002C5425 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		ACF88CFF18A9F3D6002C5425 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ACF88D0018A9F3D6002C5425 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACF88D0118A9F3D6002C5425 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ACF88D0218A9F3D6002C5425 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		ACF88D0318A9F3D6002C5425 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACF88D0D18A9F4DA002C5425 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		ACF88D0F18AA1CDC002C5425 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		ACF88D1018AA1CDC002C5425 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		ACF88D1118AA1CDC002C5425 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		ACF88D1418AA20C8002C5425 /* myGrabKitConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myGrabKitConfigurator.h; sourceTree = "<group>"; };
+		ACF88D1518AA20C9002C5425 /* myGrabKitConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myGrabKitConfigurator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC3DCC0718A8D53A00F4DAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF88D0E18A9F4DA002C5425 /* FacebookSDK.framework in Frameworks */,
+				ACF88D0418A9F3D6002C5425 /* Accounts.framework in Frameworks */,
+				ACF88D0518A9F3D6002C5425 /* AdSupport.framework in Frameworks */,
+				ACF88D0618A9F3D6002C5425 /* AssetsLibrary.framework in Frameworks */,
+				ACF88D0718A9F3D6002C5425 /* CFNetwork.framework in Frameworks */,
+				ACF88D0818A9F3D6002C5425 /* QuartzCore.framework in Frameworks */,
+				ACF88D0918A9F3D6002C5425 /* Security.framework in Frameworks */,
+				ACF88D0A18A9F3D6002C5425 /* Social.framework in Frameworks */,
+				ACF88D0B18A9F3D6002C5425 /* SystemConfiguration.framework in Frameworks */,
+				ACF88CFB18A9F3AA002C5425 /* GrabKitLib.a in Frameworks */,
+				AC3DCC1018A8D53A00F4DAFF /* CoreGraphics.framework in Frameworks */,
+				AC3DCC1218A8D53A00F4DAFF /* UIKit.framework in Frameworks */,
+				AC3DCC0E18A8D53A00F4DAFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3DCC2218A8D53A00F4DAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3DCC2718A8D53A00F4DAFF /* XCTest.framework in Frameworks */,
+				AC3DCC2918A8D53A00F4DAFF /* UIKit.framework in Frameworks */,
+				AC3DCC2818A8D53A00F4DAFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC3DCC0118A8D53A00F4DAFF = {
+			isa = PBXGroup;
+			children = (
+				AC3DCC1318A8D53A00F4DAFF /* GrabKitExplorer */,
+				AC3DCC2C18A8D53A00F4DAFF /* GrabKitExplorerTests */,
+				AC3DCC0C18A8D53A00F4DAFF /* Frameworks */,
+				AC3DCC0B18A8D53A00F4DAFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC3DCC0B18A8D53A00F4DAFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3DCC0A18A8D53A00F4DAFF /* GrabKitExplorer.app */,
+				AC3DCC2518A8D53A00F4DAFF /* GrabKitExplorerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC3DCC0C18A8D53A00F4DAFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88D0D18A9F4DA002C5425 /* FacebookSDK.framework */,
+				ACF88CFC18A9F3D6002C5425 /* Accounts.framework */,
+				ACF88CFD18A9F3D6002C5425 /* AdSupport.framework */,
+				ACF88CFE18A9F3D6002C5425 /* AssetsLibrary.framework */,
+				ACF88CFF18A9F3D6002C5425 /* CFNetwork.framework */,
+				ACF88D0018A9F3D6002C5425 /* QuartzCore.framework */,
+				ACF88D0118A9F3D6002C5425 /* Security.framework */,
+				ACF88D0218A9F3D6002C5425 /* Social.framework */,
+				ACF88D0318A9F3D6002C5425 /* SystemConfiguration.framework */,
+				AC3DCC0D18A8D53A00F4DAFF /* Foundation.framework */,
+				AC3DCC0F18A8D53A00F4DAFF /* CoreGraphics.framework */,
+				AC3DCC1118A8D53A00F4DAFF /* UIKit.framework */,
+				AC3DCC2618A8D53A00F4DAFF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC3DCC1318A8D53A00F4DAFF /* GrabKitExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				AC3DCC1C18A8D53A00F4DAFF /* AppDelegate.h */,
+				AC3DCC1D18A8D53A00F4DAFF /* AppDelegate.m */,
+				ACF88D0F18AA1CDC002C5425 /* HomeViewController.h */,
+				ACF88D1018AA1CDC002C5425 /* HomeViewController.m */,
+				ACF88D1118AA1CDC002C5425 /* HomeViewController.xib */,
+				ACF88D1418AA20C8002C5425 /* myGrabKitConfigurator.h */,
+				ACF88D1518AA20C9002C5425 /* myGrabKitConfigurator.m */,
+				AC3DCC1F18A8D53A00F4DAFF /* Images.xcassets */,
+				ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */,
+				AC3DCC1418A8D53A00F4DAFF /* Supporting Files */,
+			);
+			path = GrabKitExplorer;
+			sourceTree = "<group>";
+		};
+		AC3DCC1418A8D53A00F4DAFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC3DCC1518A8D53A00F4DAFF /* GrabKitExplorer-Info.plist */,
+				AC3DCC1618A8D53A00F4DAFF /* InfoPlist.strings */,
+				AC3DCC1918A8D53A00F4DAFF /* main.m */,
+				AC3DCC1B18A8D53A00F4DAFF /* GrabKitExplorer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC3DCC2C18A8D53A00F4DAFF /* GrabKitExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC3DCC3218A8D53A00F4DAFF /* GrabKitExplorerTests.m */,
+				AC3DCC2D18A8D53A00F4DAFF /* Supporting Files */,
+			);
+			path = GrabKitExplorerTests;
+			sourceTree = "<group>";
+		};
+		AC3DCC2D18A8D53A00F4DAFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC3DCC2E18A8D53A00F4DAFF /* GrabKitExplorerTests-Info.plist */,
+				AC3DCC2F18A8D53A00F4DAFF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACF88CE918A9F340002C5425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF88CF018A9F342002C5425 /* GrabKitDemo.app */,
+				ACF88CF218A9F342002C5425 /* GrabKitLib.a */,
+				ACF88CF418A9F342002C5425 /* GrabKitBundle.bundle */,
+				ACF88CF618A9F342002C5425 /* GrabKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC3DCC0918A8D53A00F4DAFF /* GrabKitExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3DCC3618A8D53A00F4DAFF /* Build configuration list for PBXNativeTarget "GrabKitExplorer" */;
+			buildPhases = (
+				AC3DCC0618A8D53A00F4DAFF /* Sources */,
+				AC3DCC0718A8D53A00F4DAFF /* Frameworks */,
+				AC3DCC0818A8D53A00F4DAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACF88CF818A9F391002C5425 /* PBXTargetDependency */,
+				ACF88CFA18A9F391002C5425 /* PBXTargetDependency */,
+			);
+			name = GrabKitExplorer;
+			productName = GrabKitExplorer;
+			productReference = AC3DCC0A18A8D53A00F4DAFF /* GrabKitExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC3DCC2418A8D53A00F4DAFF /* GrabKitExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3DCC3918A8D53A00F4DAFF /* Build configuration list for PBXNativeTarget "GrabKitExplorerTests" */;
+			buildPhases = (
+				AC3DCC2118A8D53A00F4DAFF /* Sources */,
+				AC3DCC2218A8D53A00F4DAFF /* Frameworks */,
+				AC3DCC2318A8D53A00F4DAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC3DCC2B18A8D53A00F4DAFF /* PBXTargetDependency */,
+			);
+			name = GrabKitExplorerTests;
+			productName = GrabKitExplorerTests;
+			productReference = AC3DCC2518A8D53A00F4DAFF /* GrabKitExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC3DCC0218A8D53A00F4DAFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Akshat;
+				TargetAttributes = {
+					AC3DCC2418A8D53A00F4DAFF = {
+						TestTargetID = AC3DCC0918A8D53A00F4DAFF;
+					};
+				};
+			};
+			buildConfigurationList = AC3DCC0518A8D53A00F4DAFF /* Build configuration list for PBXProject "GrabKitExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC3DCC0118A8D53A00F4DAFF;
+			productRefGroup = AC3DCC0B18A8D53A00F4DAFF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ACF88CE918A9F340002C5425 /* Products */;
+					ProjectRef = ACF88CE818A9F340002C5425 /* grabKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AC3DCC0918A8D53A00F4DAFF /* GrabKitExplorer */,
+				AC3DCC2418A8D53A00F4DAFF /* GrabKitExplorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ACF88CF018A9F342002C5425 /* GrabKitDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GrabKitDemo.app;
+			remoteRef = ACF88CEF18A9F342002C5425 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ACF88CF218A9F342002C5425 /* GrabKitLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = GrabKitLib.a;
+			remoteRef = ACF88CF118A9F342002C5425 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ACF88CF418A9F342002C5425 /* GrabKitBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GrabKitBundle.bundle;
+			remoteRef = ACF88CF318A9F342002C5425 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ACF88CF618A9F342002C5425 /* GrabKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GrabKitTests.octest;
+			remoteRef = ACF88CF518A9F342002C5425 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC3DCC0818A8D53A00F4DAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3DCC1818A8D53A00F4DAFF /* InfoPlist.strings in Resources */,
+				AC3DCC2018A8D53A00F4DAFF /* Images.xcassets in Resources */,
+				ACF88D0C18A9F407002C5425 /* GrabKitBundle.bundle in Resources */,
+				ACF88D1318AA1CDC002C5425 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3DCC2318A8D53A00F4DAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3DCC3118A8D53A00F4DAFF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC3DCC0618A8D53A00F4DAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3DCC1E18A8D53A00F4DAFF /* AppDelegate.m in Sources */,
+				AC3DCC1A18A8D53A00F4DAFF /* main.m in Sources */,
+				ACF88D1218AA1CDC002C5425 /* HomeViewController.m in Sources */,
+				ACF88D1618AA20C9002C5425 /* myGrabKitConfigurator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3DCC2118A8D53A00F4DAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3DCC3318A8D53A00F4DAFF /* GrabKitExplorerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC3DCC2B18A8D53A00F4DAFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC3DCC0918A8D53A00F4DAFF /* GrabKitExplorer */;
+			targetProxy = AC3DCC2A18A8D53A00F4DAFF /* PBXContainerItemProxy */;
+		};
+		ACF88CF818A9F391002C5425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GrabKitLib;
+			targetProxy = ACF88CF718A9F391002C5425 /* PBXContainerItemProxy */;
+		};
+		ACF88CFA18A9F391002C5425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GrabKitBundle;
+			targetProxy = ACF88CF918A9F391002C5425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC3DCC1618A8D53A00F4DAFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC3DCC1718A8D53A00F4DAFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC3DCC2F18A8D53A00F4DAFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC3DCC3018A8D53A00F4DAFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC3DCC3418A8D53A00F4DAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC3DCC3518A8D53A00F4DAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC3DCC3718A8D53A00F4DAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Akshat/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrabKitExplorer/GrabKitExplorer-Prefix.pch";
+				INFOPLIST_FILE = "GrabKitExplorer/GrabKitExplorer-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lsqlite3.0",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/include/GrabKitLib/** $(SDKROOT)/usr/include/libxml2/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC3DCC3818A8D53A00F4DAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Akshat/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrabKitExplorer/GrabKitExplorer-Prefix.pch";
+				INFOPLIST_FILE = "GrabKitExplorer/GrabKitExplorer-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lsqlite3.0",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/include/GrabKitLib/** $(SDKROOT)/usr/include/libxml2/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AC3DCC3A18A8D53A00F4DAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GrabKitExplorer.app/GrabKitExplorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrabKitExplorer/GrabKitExplorer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GrabKitExplorerTests/GrabKitExplorerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AC3DCC3B18A8D53A00F4DAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GrabKitExplorer.app/GrabKitExplorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrabKitExplorer/GrabKitExplorer-Prefix.pch";
+				INFOPLIST_FILE = "GrabKitExplorerTests/GrabKitExplorerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC3DCC0518A8D53A00F4DAFF /* Build configuration list for PBXProject "GrabKitExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3DCC3418A8D53A00F4DAFF /* Debug */,
+				AC3DCC3518A8D53A00F4DAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3DCC3618A8D53A00F4DAFF /* Build configuration list for PBXNativeTarget "GrabKitExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3DCC3718A8D53A00F4DAFF /* Debug */,
+				AC3DCC3818A8D53A00F4DAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3DCC3918A8D53A00F4DAFF /* Build configuration list for PBXNativeTarget "GrabKitExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3DCC3A18A8D53A00F4DAFF /* Debug */,
+				AC3DCC3B18A8D53A00F4DAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC3DCC0218A8D53A00F4DAFF /* Project object */;
+}
